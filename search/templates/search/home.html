@@ -1,0 +1,7 @@
+{% extends 'search/base.html' %}
+{% block content %}
+    {% for result in results %}
+        <h1>{{ result.name }}</h1>
+        <p>{{ result.hash }}</p>
+    {% endfor %}
+{%endblock%}
