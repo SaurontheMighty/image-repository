@@ -2,7 +2,7 @@ from django.shortcuts import render
 
 results = [
     {
-        'name': "sloth_bear.png",
+        'name': "/search/media/sloth_bear.jpg",
         'hash': "0XASKDFJ3IEWUY",
         'description': "An image of a cool sloth bear.",
         'portrait': "false",
@@ -10,7 +10,7 @@ results = [
         'Date_created': "Today"
     },
     {
-        'name': "small_sloth_bear.png",
+        'name': "/search/media/small_sloth_bear.png",
         'hash': "0XASKDFJ3IEWGY",
         'description': "An image of a small sloth bear.",
         'portrait': "false",

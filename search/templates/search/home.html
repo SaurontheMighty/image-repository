@@ -1,7 +1,13 @@
 {% extends 'search/base.html' %}
+{% load static %}
 {% block content %}
     {% for result in results %}
-        <h1>{{ result.name }}</h1>
-        <p>{{ result.hash }}</p>
+        <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="{% static result.name %}" alt="Card image cap">
+            <div class="card-body">
+                <h1>{{ result.name }}</h1>
+                <p class="card-text">{{ result.hash }}</p>
+            </div>
+        </div>
     {% endfor %}
 {%endblock%}
